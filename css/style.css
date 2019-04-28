@@ -119,11 +119,9 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 6rem;
     justify-items: center;
-    overflow-x: scroll;
-    min-width: 1200px;
-    width: 1200px;
-    max-width: 1200px;
     position: relative;
+    overflow-x: scroll;
+    max-width: 1190px;
 }
 
 @media screen and (min-width: 1190px){

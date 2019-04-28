@@ -1,0 +1,246 @@
+/* ESTILOS GENERALES */
+
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -o-box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif, Helvetica, Arial;
+    background: #000;
+    color: #fff;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* ESTILOS DEL HEADER */
+
+.header {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, minmax(70px, 70px));
+    grid-gap: .5rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.header .buttons a {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 0.2rem 0.2rem;
+}
+
+.header .menu-container {
+    height: 100px;
+    background: gray;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header .menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 100px));
+    grid-gap: .3rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.header .menu a {
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem 0.2rem;
+    background: #454545;
+}
+
+
+@media screen and (min-width: 768px){
+    .header {
+        justify-items: unset;
+    }
+
+    .header .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(105px, 105px));
+        grid-gap: .7rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+        justify-content: end;
+    }
+    
+    .header .buttons a {
+        display: inline-block;
+        padding: .2rem 1rem;
+        border: 2px solid #fff;
+        min-width: 105px;
+        text-align: center;
+    }
+
+    .header .menu {
+        justify-content: start;
+        font-size: 1.1rem;
+        grid-template-columns: repeat(2, minmax(150px, 150px));
+    }
+}
+
+
+/* ESTILOS DEL MAIN */
+
+.main {
+    display: grid;
+    padding: 3rem 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 6rem;
+    justify-items: center;
+    overflow-x: scroll;
+    max-width: 1360px;
+    position: relative;
+}
+
+@media screen and (min-width: 1190px){
+    .main {
+        overflow-x: auto; 
+    }
+}
+
+.main .line {
+    position: absolute;
+}
+
+.main .line1 {
+    height: 155px;
+    top: 63px;
+    left: 281px;
+}
+
+.main .line2 {
+    height: 155px;
+    top: 295px;
+    left: 281px;
+}
+
+.main .line3 {
+    top: 138px;
+    height: 231px;
+    left: 575px;
+}
+
+.main .line4 {
+    top: 230px;
+    left: 877px;
+}
+
+@media screen and (min-width: 1360px) {
+    .main .line1 {
+        left: 325px;
+    }
+
+    .main .line2 {
+        left: 325px;
+        top: 292px;
+    }
+
+    .main .line3 {
+        left: 650px;
+    }
+
+    .main .line4 {
+        top: 231px;
+        left: 981px;
+    }
+}
+
+.main .round {
+    display: grid;
+    grid-row-gap: 3rem; 
+    font-weight: bold;
+}
+.main .round .match {
+    display: grid;
+    grid-row-gap: .5rem;
+}
+
+.main .semi-final {
+    display: grid;
+    align-items: center;
+}
+
+.main .semi-final .match {
+    grid-row-gap: 1rem;
+}
+
+.main .final {
+    display: grid;
+    align-items: center;
+}
+
+.main .final .match {
+    grid-row-gap: 1rem;
+}
+
+.main .champion {
+    display: grid;
+    align-items: center;
+}
+
+.main .round .match .player {
+    max-height: 30px;
+}
+
+.main .round .match .player .tabla {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: 190px 10px;
+    grid-gap: .1rem;
+    font-size: .9rem;
+}
+
+.main .round .match .player .tabla span {
+    font-size: 1rem;
+}
+
+.main .round .match .player .tabla .table {
+    max-height: 100%;
+    border-collapse: collapse;
+    background: #171717;
+}
+
+.main .round .match .player .tabla .table tbody tr td img {
+    min-height: 23px;
+    max-height: 23px;
+}
+
+.main .round .match .player .tabla .table tbody tr td {
+    border: 1px solid #fff;
+    padding: .15rem .3rem;
+    text-align: center;
+}
+
+@media screen and (min-width: )

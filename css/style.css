@@ -113,13 +113,16 @@ img {
 /* ESTILOS DEL MAIN */
 
 .main {
+    margin: 0 auto;
     display: grid;
     padding: 3rem 3rem;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 6rem;
     justify-items: center;
     overflow-x: scroll;
-    max-width: 1360px;
+    min-width: 1200px;
+    width: 1200px;
+    max-width: 1200px;
     position: relative;
 }
 
@@ -154,26 +157,6 @@ img {
 .main .line4 {
     top: 230px;
     left: 877px;
-}
-
-@media screen and (min-width: 1360px) {
-    .main .line1 {
-        left: 325px;
-    }
-
-    .main .line2 {
-        left: 325px;
-        top: 292px;
-    }
-
-    .main .line3 {
-        left: 650px;
-    }
-
-    .main .line4 {
-        top: 231px;
-        left: 981px;
-    }
 }
 
 .main .round {
@@ -242,5 +225,3 @@ img {
     padding: .15rem .3rem;
     text-align: center;
 }
-
-@media screen and (min-width: )
